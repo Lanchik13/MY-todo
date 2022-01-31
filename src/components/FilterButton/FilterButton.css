@@ -1,0 +1,9 @@
+.filterButton {
+  border-width: 0px;
+  color: #C9955D;
+}
+
+.filterButton[aria-pressed="true"] {
+  border: 1px solid #C9955D;
+  border-radius: 5px;
+}
