@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Form from "./components/Form/Form";
 import FilterButton from "./components/FilterButton/FilterButton";
 import Todo from "./components/Todo/Todo";
+import "./App.scss";
 
 const DATA = [{ id: "todo-0", name: "Example", completed: true }];
 
@@ -69,11 +70,13 @@ function App() {
         editTask={editTask}
       />
     ));
- 
+
   const headingText = `${taskList.length}/${tasks.length} left`;
   return (
-    <div className="todoapp stack-large">
-      <Form addTask={addTask} />
+    <div className="todoapp stack-large ">
+      <div className="titleBlock titleText">
+        <p>to do list</p>
+      </div>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
@@ -81,6 +84,7 @@ function App() {
       >
         {taskList}
       </ul>
+      <Form addTask={addTask} />
       <div className="titleBlock">
         <div id="list-heading">{headingText}</div>
         <div className="filters todo__btn-group stack-exception">

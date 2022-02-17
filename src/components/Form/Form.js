@@ -14,11 +14,6 @@ const [name, setName] = useState("");
   }
   return (
     <form onSubmit={handleSubmit}>
-      <div className="titleBlock">
-        <label htmlFor="new-todo-input" className="titleText">
-          to do list
-        </label>
-      </div>
       <input
         type="text"
         id="new-todo-input"
