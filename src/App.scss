@@ -64,7 +64,6 @@ body {
 }
 .btn {
   padding: 0.8rem 1rem 0.7rem;
-  border: 0.2rem solid #4d4d4d;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -87,16 +86,12 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.stack-small > * + * {
-  margin-top: 1.25rem;
-}
+
 .stack-large > * + * {
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 550px) {
-  .stack-small > * + * {
-    margin-top: 1.4rem;
-  }
+
   .stack-large > * + * {
     margin-top: 2.8rem;
   }
