@@ -1,5 +1,5 @@
 @import "../../variables.scss";
-/* Todo item styles */
+
 .todo {
   display: flex;
   flex-direction: row;
@@ -32,12 +32,9 @@
   color: #fff;
   background-color: $color-dark-900;
 }
-
 .btn-edit {
   background-color: #fff;
 }
-
-/* CHECKBOX STYLES */
 
 .stack-small {
   display: flex;
@@ -97,7 +94,6 @@
 }
 .todo-checkbox > input[type="checkbox"]:focus + label::before {
   border-width: 4px;
-  /* outline: 3px dashed #228bec; */
 }
 .todo-checkbox > label::after {
   box-sizing: content-box;

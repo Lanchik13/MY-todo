@@ -74,20 +74,20 @@ function App() {
   const headingText = `${taskList.length}/${tasks.length} left`;
   return (
     <div className="todoapp stack-large ">
-      <div className="titleBlock titleText">
+      <div className="startEndBlock titleBlock">
         <p>to do list</p>
       </div>
       <ul
         role="list"
-        className="todo-list stack-large stack-exception"
+        className="todo-list stack-large"
         aria-labelledby="list-heading"
       >
         {taskList}
       </ul>
       <Form addTask={addTask} />
-      <div className="titleBlock">
+      <div className="startEndBlock filtersBlock">
         <div id="list-heading">{headingText}</div>
-        <div className="filters todo__btn-group stack-exception">
+        <div className="filters todo__btn-group">
           {filterList}
         </div>
       </div>

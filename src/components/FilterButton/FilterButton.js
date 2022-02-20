@@ -1,11 +1,11 @@
 import React from "react";
-import "./FilterButton.css";
+import styles from "./FilterButton.module.scss";
 
 function FilterButton(props) {
   return (
     <button
       type="button"
-      className="btn filterButton"
+      className={`btn ${styles.filterButton}`}
       aria-pressed={props.isPressed}
       onClick={() => props.setFilter(props.name)}
     >

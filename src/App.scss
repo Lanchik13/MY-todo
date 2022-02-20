@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 h1,
 h2 {
@@ -45,19 +45,16 @@ body {
   height: 100vh;
   max-width: 68rem;
   margin: 0 auto;
-  font: 1.6rem/1.25 "Open Sans", sans-serif;
-  background: linear-gradient(119.17deg, #ff7e5f 11.1%, $color-medium-400 85.85%);
+  font: 2rem/2.8 "Open Sans", sans-serif;
+  background: linear-gradient(
+    119.17deg,
+    #ff7e5f 11.1%,
+    $color-medium-400 85.85%
+  );
   color: $color-dark-900;
   position: relative;
 }
-@media screen and (min-width: 620px) {
-  body {
-    font-size: 1.9rem;
-    line-height: 1.31579;
-  }
-}
-/*END RESETS*/
-/* GLOBAL STYLES */
+
 .form-group > input[type="text"] {
   display: inline-block;
   margin-top: 0.4rem;
@@ -91,19 +88,15 @@ body {
   margin-top: 2.5rem;
 }
 @media screen and (min-width: 550px) {
-
   .stack-large > * + * {
     margin-top: 2.8rem;
   }
 }
-.stack-exception {
-  margin-top: 1.2rem;
-}
-/* END GLOBAL STYLES */
+
 .todoapp {
-  background: #fff4e9;
+  background: $color-light-100;
   margin: 9.9rem 10%;
-  border: 0.2rem solid #ffca93;
+  border: 0.2rem solid $color-light-300;
   box-sizing: border-box;
   box-shadow: 0px 8px 35px 5px #fe9262;
 }
@@ -116,28 +109,26 @@ body {
   max-width: 100%;
 }
 
-.titleBlock {
+.startEndBlock {
   width: 100%;
   height: 5rem;
-  background-color: #ffca93;
+  background-color: $color-light-300;
   display: flex;
   max-width: 100%;
   align-items: center;
   padding: 0 3rem;
+  color: $color-dark-800;
+  justify-content: space-between;
 }
 
-.titleText {
-  display: flex;
+.titleBlock {
   justify-content: center;
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.8rem;
-  color: #7f4b13;
-  padding: 0 3rem;
 }
 
-.filters {
-  width: 100%;
-  margin: unset auto;
+.filtersBlock {
+  color: $color-dark-800-transparent;
 }

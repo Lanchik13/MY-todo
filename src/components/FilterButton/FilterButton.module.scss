@@ -1,9 +1,14 @@
+@import "../../variables.scss";
+
 .filterButton {
   border-width: 0px;
   color: #C9955D;
+  border-radius: 5px;
+  &:hover {
+    background: $color-light-200;
+  }
 }
 
 .filterButton[aria-pressed="true"] {
   border: 1px solid #C9955D;
-  border-radius: 5px;
 }
